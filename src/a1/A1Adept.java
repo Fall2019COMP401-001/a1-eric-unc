@@ -28,14 +28,15 @@ public class A1Adept {
 		var numCustomers = scan.nextInt();
 		
 		for(var i = 0; i < numCustomers; i++){
-			var name = scan.next();
+			var first = scan.next();
+			var last = scan.next();
+			var name = first + " " + last;
+			
 			customers.put(name, 0.0);
 			
-			var numItemsPCustomer = scan.next();
-			System.out.println("RU ROH THIS PART ISN' WORKING: " + numItemsPCustomer);
-			System.exit(0);
+			var numItemsPCustomer = scan.nextInt();
 			
-			for(var j = 0; j < 0 /*numItemsPCustomer*/; j++){
+			for(var j = 0; j < numItemsPCustomer; j++){
 				var numOfItem = scan.nextInt();
 				var item = scan.next();
 				
