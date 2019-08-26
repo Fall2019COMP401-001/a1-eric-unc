@@ -44,7 +44,7 @@ public class A1Novice {
 		});*/
 		
 		for(var customer : customerOrder){
-			System.out.println(customer + ": " + customers.get(customer));
+			System.out.println(customer + ": " + String.format("##.##", customers.get(customer)));
 		}
 	}
 }
