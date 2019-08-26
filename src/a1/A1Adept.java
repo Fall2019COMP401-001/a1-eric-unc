@@ -31,9 +31,11 @@ public class A1Adept {
 			var name = scan.next();
 			customers.put(name, 0.0);
 			
-			var numItemsPCustomer = scan.nextInt();
+			var numItemsPCustomer = scan.next();
+			System.out.println("RU ROH THIS PART ISN' WORKING: " + numItemsPCustomer);
+			System.exit(0);
 			
-			for(var j = 0; j < numItemsPCustomer; j++){
+			for(var j = 0; j < 0 /*numItemsPCustomer*/; j++){
 				var numOfItem = scan.nextInt();
 				var item = scan.next();
 				
