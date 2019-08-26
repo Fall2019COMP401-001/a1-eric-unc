@@ -41,12 +41,31 @@ public class A1Adept {
 			}
 		}
 		
-		String biggest;
-		String smallest;
-		var total = 0.0d;
+		
+		// Variables are defined at the class level because lambdas are a HUGE fucking pain in
+		// the ass (cannot change local variables) and I'm too lazy to not use them. see below the method.
 		
 		customers.forEach((name, cost) -> {
+			if(biggest.isEmpty() || smallest.isEmpty()){
+				biggest = name;
+				smallest = name;
+			}else{
+				if(customers.get(biggest) < cost)
+					biggest = name;
+				
+				if(customers.get(smallest) > cost)
+					smallest = name;
+			}
 			
+			total += cost;
 		});
+		
+		System.out.println("Biggest: " + biggest + "(" + String.format("%.2f", customers.get(biggest)) + ")");
+		System.out.println("Smallest: " + smallest + "(" + String.format("%.2f", customers.get(smallest)) + ")");
+		System.out.println("Average: " + String.format("%.2f", total / customers.size()));
 	}
+	
+	private static String biggest = "";
+	private static String smallest = "";
+	private static double total = 0.0;
 }
