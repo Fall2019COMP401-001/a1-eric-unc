@@ -1,7 +1,6 @@
 package a1;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.LinkedHashMap;
 import java.util.Scanner;
 
@@ -37,7 +36,7 @@ public class A1Jedi {
 		 * I know this means the name is in the code twice but i ain't changing it
 		 * 
 		 */
-		var items = new HashMap<String, Item>();
+		var items = new LinkedHashMap<String, Item>();
 		
 		var numItems = scan.nextInt();
 		
