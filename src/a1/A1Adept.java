@@ -63,8 +63,8 @@ public class A1Adept {
 			total += cost;
 		});
 		
-		System.out.println("Biggest: " + biggest + "(" + String.format("%.2f", customers.get(biggest)) + ")");
-		System.out.println("Smallest: " + smallest + "(" + String.format("%.2f", customers.get(smallest)) + ")");
+		System.out.println("Biggest: " + biggest + " (" + String.format("%.2f", customers.get(biggest)) + ")");
+		System.out.println("Smallest: " + smallest + " (" + String.format("%.2f", customers.get(smallest)) + ")");
 		System.out.println("Average: " + String.format("%.2f", total / customers.size()));
 	}
 	
